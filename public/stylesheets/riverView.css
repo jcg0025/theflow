@@ -1,0 +1,33 @@
+.infoBlock {
+    text-align: center;
+}
+
+
+h4.label{
+  color: lightblue !important;
+  font-size: 2em !important;
+  text-align: center !important;
+}
+
+.value {
+  color: black;
+  width: 8em;
+  height: 8em;
+  line-height: 8em;
+  border-radius: 50%;
+  font-size: 2em;
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+  background:white;
+  margin: auto;
+}
+
+.graphButt {
+  color: greenyellow;
+}
+
+.graphButt:hover {
+  cursor: pointer;
+  color: cadetblue;
+  text-decoration: underline;
+}

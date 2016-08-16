@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Material Ripple</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat' type='text/css'>
+
+    <!-- Material Ripple CSS -->
+    <link rel="stylesheet" href="../dist/ripple.min.css" type='text/css'>
+
+    <style>
+      body {
+      	margin: 0;
+        background: #eeeded;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+      }
+
+      .material-ripple > span {
+        /* static positioned elements appear behind absolutely positioned siblings (.material-ink in this case)
+        so we will make the elements relatively positioned to bring them above .material-ink */
+        position: relative;
+        display: block;
+        padding: 15px 25px;
+      }
+
+      .red-ripple > .material-ink {
+        background-color: red;
+      }
+
+      .material-card {
+        width: 180px;
+        min-height: 180px;
+        text-align: left;
+      }
+
+      .example-cards {
+        margin: 10px 10px 50px 10px;
+      }
+
+      .example-cards > .material-card {
+        display: inline-block;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>Material Design Ripple effect</h1>
+    <p>by Balint Soos</p>
+
+    <div class="example-cards">
+      <div class="material-card material-shadow-1 material-hover">
+
+        <div class="material-ripple">
+          <span>Dashboard</span>
+        </div>
+
+        <!-- you can change the ripple color with CSS -->
+        <div class="material-ripple red-ripple">
+          <span>Categories</span>
+        </div>
+
+        <!-- or you can use the "data-ripple-color" attribute -->
+        <div class="material-ripple" data-ripple-color="#2ecc71">
+          <span>My Account</span>
+        </div>
+
+        <div class="material-ripple" data-ripple-color="#3498db">
+          <span>Settings</span>
+        </div>
+
+        <div class="material-ripple" data-ripple-color="#c0392b">
+          <span>Logout</span>
+        </div>
+      </div>
+    </div>
+
+    <p>Material Design Cards and Box Shadow by Samuel Thornton</p>
+
+    <div class="example-cards">
+      <div class="material-card"></div>
+      <div class="material-card material-shadow-1 material-hover"></div>
+      <div class="material-card material-shadow-2"></div>
+      <div class="material-card material-shadow-3"></div>
+      <div class="material-card material-shadow-4"></div>
+      <div class="material-card material-shadow-5"></div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- Material Ripple JS -->
+    <script src="../dist/ripple.min.js"></script>
+  </body>
+</html>

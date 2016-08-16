@@ -1,0 +1,73 @@
+.container {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 80% !important;
+    border: 2px solid black;
+}
+
+/*.bar {
+    width: 35px;
+    height: 3px;
+    background-color:orange;
+    margin-top: 6px;
+    margin-left: -1em;
+    transition: 0s;
+}*/
+
+/* Rotate first bar */
+.change .bar1 {
+    /*-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;*/
+    margin-left: 80% !important;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    /*opacity: 0;*/
+    margin-right: 10em;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    margin-right: 10em;
+    /*-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;*/
+}
+
+/*.menu-btn.container {
+    width: 4em;
+    border-radius: 50%;
+    height: 4em;
+    background-color: red;
+    margin-top: 1em;
+}*/
+
+#navDrop {
+    width: 4em;
+    background: transparent;
+    z-index: 1000;
+    margin-left: 94%;
+    margin-top: 1em;
+    transition-property: margin-top;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-out;
+}
+
+#navDrop:hover {
+    cursor: pointer;
+}
+.bar {
+    width: 2em;
+    height: 2px;
+    /*margin: 0em 0em 0.5em;*/
+    margin-bottom: 6px;
+    background:#04d7e9;
+    border-radius: 1em;
+}
+
+#hamburger {
+    margin-top: -3em;
+    z-index: 100;
+    position: absolute;
+    margin-left: 1em;
+}

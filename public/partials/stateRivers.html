@@ -1,0 +1,9 @@
+
+<a class='backButt' href="/#/">home</a><span class='backButt' id='arrow'> > </span><a class='backButt' href='/#/states/'>states</a>
+<br>
+<h1 class='header'>{{state}}</h1>
+
+
+<div ng-repeat='river in rivers | orderBy: "name"' class='riverListItem' ng-click='openRiver(river.code)' ng-mouseover="show($event)">
+    <p id='river.code'>{{river.name | uppercase }}</p>
+</div>
